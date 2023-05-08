@@ -11,7 +11,7 @@ app = Flask(__name__)
 @app.route('/input/<int:number>')
 def return_number(number):
     if number == 1:
-        return jsonify({'success': True, 'result': 2})
+        return jsonify({'success': True, 'result': 3})
     else:
         return jsonify({'success': False, 'error': 'Invalid input'})
 
